@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="{055313a4-9c27-4277-926c-54c429b55d96}" Name="Standard Computer Maintenance" Description="Q29tcHV0ZXIgTWFpbnRlbmFuY2U=" Version="1.7.2.53" RemoteCategory="0" ExecutionType="Local" PS3ObjectCount="0" VariableSuffix="7">
+  <Object ID="{6a519f04-01e8-4442-8866-344cdee3b407}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml /&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" />
+  </LinkManager>
+  <Activity mc:Ignorable="sap sads" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>365,719</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy" sap:VirtualizedContainerService.HintSize="325,582" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:DeleteTemporaryFiles DeleteCookies_DisplayArg="{x:Null}" DeleteCookies_Item="{x:Null}" DeleteCookies_ItemProp="{x:Null}" DeleteTempFiles_DisplayArg="{x:Null}" DeleteTempFiles_Item="{x:Null}" DeleteTempFiles_ItemProp="{x:Null}" DeleteTempInternetFiles_DisplayArg="{x:Null}" DeleteTempInternetFiles_Item="{x:Null}" DeleteTempInternetFiles_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.53, Culture=neutral, PublicKeyToken=null" DeleteCookies="False" DeleteTempFiles="True" DeleteTempInternetFiles="True" DisplayName="Delete Temporary Files" sap:VirtualizedContainerService.HintSize="305,124" Moniker="2e469593-f5b9-4408-9c93-27268c43311e" Result="[DeleteTemporaryFiles_Result_3]" ScriptDirectory="Unused" TypeName="DeleteTemporaryFiles" m_bTextLinkChange="False" />
+        <p:EmptyRecycleBin DriveLetter_Item="{x:Null}" DriveLetter_ItemProp="{x:Null}" EmptyForAllDrives_Item="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.53, Culture=neutral, PublicKeyToken=null" DisplayName="Empty Recycle Bin" DriveLetter="c:" DriveLetter_DisplayArg="c:" EmptyForAllDrives="True" sap:VirtualizedContainerService.HintSize="305,97" Moniker="ff01ed9b-44a4-43bd-9387-08a2b0a03d83" Result="[EmptyRecycleBin_Result_4]" ScriptDirectory="Unused" TypeName="EmptyRecycleBin" m_bTextLinkChange="False" />
+        <p:DiskDefragmentation Computer_Item="{x:Null}" Computer_ItemProp="{x:Null}" Drive_Item="{x:Null}" Drive_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.53, Culture=neutral, PublicKeyToken=null" Computer="localhost" Computer_DisplayArg="localhost" DisplayName="Disk Defragmentation" Drive="c:" Drive_DisplayArg="c:" sap:VirtualizedContainerService.HintSize="305,89" Moniker="a53ccc77-054b-4c9f-96f3-2d4a92cabb71" Result="[DiskDefragmentation_Result_0]" ScriptDirectory="Unused" TypeName="DiskDefragmentation" Wait="True" m_bTextLinkChange="False" />
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:Double" Name="DiskDefragmentation_Result_0" />
+        <Variable x:TypeArguments="x:Double" Name="DeleteTemporaryFiles_Result_3" />
+        <Variable x:TypeArguments="x:Double" Name="EmptyRecycleBin_Result_4" />
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>

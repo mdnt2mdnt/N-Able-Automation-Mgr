@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="{56172180-2361-4d6a-a689-458d49ea7a2c}" Name="Join Domain" Description="Sm9pbiBEb21haW4=" Version="1.7.2.53" RemoteCategory="0" ExecutionType="Local" PS3ObjectCount="0" VariableSuffix="9">
+  <Object ID="{f05adea9-6605-4c71-b90f-e0114588f397}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml&gt;&lt;Parameters&gt;&lt;Parameter ParameterName=&quot;domainname&quot; Label=&quot;Domain Name&quot; ParameterType=&quot;string&quot; Value=&quot;corp.networkelites.com&quot; /&gt;&lt;Parameter ParameterName=&quot;computerpass&quot; Label=&quot;Computer Password&quot; ParameterType=&quot;string&quot; Value=&quot;123Draconis&quot; /&gt;&lt;Parameter ParameterName=&quot;domainpass&quot; Label=&quot;Domain Password&quot; ParameterType=&quot;string&quot; Value=&quot;r00tr00t~&quot; /&gt;&lt;/Parameters&gt;&lt;/xml&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>StartObject.domainname</d2p1:m_Item1>
+        <d2p1:m_Item2>943d2da7-3bc8-4eed-9e1b-07baca4942af</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.JoinDomain, PolicyExecutionEngine, Version=1.7.2.53, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>Domain</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+    </hashset>
+  </LinkManager>
+  <Activity mc:Ignorable="sap sads" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>564.8,473.6</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy" sap:VirtualizedContainerService.HintSize="524.8,433.6" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:JoinDomain CompPassword="{x:Null}" CompPassword_DisplayArg="{x:Null}" CompPassword_Item="{x:Null}" CompPassword_ItemProp="{x:Null}" ComputerPassword="{x:Null}" ComputerUser_Item="{x:Null}" ComputerUser_ItemProp="{x:Null}" Computer_Item="{x:Null}" Computer_ItemProp="{x:Null}" Data="{x:Null}" Data_DisplayArg="{x:Null}" Data_Item="{x:Null}" Data_ItemProp="{x:Null}" DomPassword="{x:Null}" DomPassword_DisplayArg="{x:Null}" DomPassword_Item="{x:Null}" DomPassword_ItemProp="{x:Null}" DomainUser_Item="{x:Null}" DomainUser_ItemProp="{x:Null}" Domain_Item="{x:Null}" Domain_ItemProp="{x:Null}" OrgUnit_Item="{x:Null}" OrgUnit_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.53, Culture=neutral, PublicKeyToken=null" Computer="localhost" ComputerUser="r.jackson@celinacomputers.com" ComputerUser_DisplayArg="r.jackson@celinacomputers.com" Computer_DisplayArg="localhost" DisplayName="Join Domain" Domain="[domainname]" DomainUser="administrator" DomainUser_DisplayArg="administrator" Domain_DisplayArg="StartObject.domainname" sap:VirtualizedContainerService.HintSize="504,240" Moniker="943d2da7-3bc8-4eed-9e1b-07baca4942af" OrgUnit="CN=Computers,CN=NE Cop, DC=corp,DC=networkelites,DC=com" OrgUnit_DisplayArg="CN=Computers,CN=NE Cop, DC=corp,DC=networkelites,DC=com" Result="[JoinDomain_Result_0]" ScriptDirectory="Unused" TypeName="JoinDomain" m_bTextLinkChange="False" />
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:String" Default="corp.networkelites.com" Name="domainname" />
+        <Variable x:TypeArguments="x:Double" Name="JoinDomain_Result_0" />
+        <Variable x:TypeArguments="x:String" Default="123Draconis" Name="computerpass" />
+        <Variable x:TypeArguments="x:String" Default="r00tr00t~" Name="domainpass" />
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>

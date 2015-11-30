@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="{ee34fcd3-5fb7-4e07-bea8-e712042e5dc8}" Name="K3DES Windows Sec Review" Description="QmF0Y2ggc2NyaXB0IGZvciBydW5uaW5nIG9uIFBheXRlY2ggQ28gU2VydmVycyBmb3IgdGhlIFBDSSBBc3NlbWVudC4gDQoNClNjcmlwdCBjcmVhdGVkIGJ5IEszREVT" Version="1.7.0.28" RemoteCategory="0" ExecutionType="Local" PS3ObjectCount="0" VariableSuffix="24">
+  <Object ID="{8a13fb4a-94fa-42de-a3f4-c36bd9832888}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml&gt;&lt;Parameters&gt;&lt;Parameter ParameterName=&quot;Password&quot; Label=&quot;Password&quot; ParameterType=&quot;string&quot; Value=&quot;draconis&quot; /&gt;&lt;/Parameters&gt;&lt;GlobalVariables&gt;&lt;Parameter ParameterName=&quot;emailpass&quot; Label=&quot;emailpass&quot; ParameterType=&quot;string&quot; Value=&quot;draconis&quot; /&gt;&lt;/GlobalVariables&gt;&lt;/xml&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>GlobalVariables.emailpass</d2p1:m_Item1>
+        <d2p1:m_Item2>e704ccd8-d912-4716-a49b-20f96f9fa3a9</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.Assignment, PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>VariableName</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>StartObject.Password</d2p1:m_Item1>
+        <d2p1:m_Item2>e704ccd8-d912-4716-a49b-20f96f9fa3a9</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.Assignment, PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>Value</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+    </hashset>
+  </LinkManager>
+  <Activity mc:Ignorable="sads sap" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>585.6,1144</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy" sap:VirtualizedContainerService.HintSize="545.6,1104" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:Assignment Value_Item="{x:Null}" Value_ItemProp="{x:Null}" VariableName="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" DisplayName="Global Variable Assignment" sap:VirtualizedContainerService.HintSize="524.8,102.4" IsLinked="True" Moniker="e704ccd8-d912-4716-a49b-20f96f9fa3a9" Result="[Assignment_Result_23]" ScriptDirectory="Unused" TypeName="Assignment" Value="[Password]" ValueOut="[Assignment_ValueOut_22]" Value_DisplayArg="StartObject.Password" VariableName_DisplayArg="GlobalVariables.emailpass" VariableType="string" m_bTextLinkChange="False" />
+        <p:DownloadFileFromURL RemoteFileURL_Item="{x:Null}" RemoteFileURL_ItemProp="{x:Null}" SaveAsFileName_Item="{x:Null}" SaveAsFileName_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" DisplayName="Download File from URL" sap:VirtualizedContainerService.HintSize="524.8,126.4" Moniker="e45e71b6-716e-4aa9-9146-9a550a3efdf7" OverwriteExistingFile="True" RemoteFileURL="http://swinstall-repo.netelite.us/paytechco/Windows-Sec-Rev.bat" RemoteFileURL_DisplayArg="http://swinstall-repo.netelite.us/paytechco/Windows-Sec-Rev.bat" Result="[DownloadFileFromURL_Result_17]" SaveAsFileName="c:\Temp\Windows-Sec-Rev.bat" SaveAsFileName_DisplayArg="c:\Temp\Windows-Sec-Rev.bat" ScriptDirectory="Unused" TypeName="DownloadFileFromURL" m_bTextLinkChange="False" />
+        <p:RunProgram Arguments_ItemProp="{x:Null}" Program_ItemProp="{x:Null}" WorkingDirectory_ItemProp="{x:Null}" Arguments="&gt; c:\temp\%COMPUTERNAME%.txt" Arguments_DisplayArg="&gt; c:\temp\%COMPUTERNAME%.txt" Arguments_Item="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" DisplayName="Run Program" sap:VirtualizedContainerService.HintSize="524.8,246.4" Moniker="4b26461d-18b0-42a5-8cb7-368015d4dd96" ProcessID="[RunProgram_ProcessID_7]" Program="c:\temp\Windows-Sec-Rev.bat " Program_DisplayArg="c:\temp\Windows-Sec-Rev.bat " Program_Item="{x:Null}" Result="[RunProgram_Result_8]" RunAsType="Designer" ScriptDirectory="Unused" TypeName="RunProgram" WaitForCompletion="True" WindowType="Hidden" WorkingDirectory="c:\" WorkingDirectory_DisplayArg="c:\" WorkingDirectory_Item="{x:Null}" m_bTextLinkChange="False" />
+        <p:SendEmail Attachment_Item="{x:Null}" Attachment_ItemProp="{x:Null}" Body_Item="{x:Null}" Body_ItemProp="{x:Null}" From_Item="{x:Null}" From_ItemProp="{x:Null}" Host_Item="{x:Null}" Host_ItemProp="{x:Null}" Password="{x:Null}" Password_DisplayArg="{x:Null}" Password_Item="{x:Null}" Password_ItemProp="{x:Null}" Port_Item="{x:Null}" Port_ItemProp="{x:Null}" Subject_Item="{x:Null}" Subject_ItemProp="{x:Null}" To_Item="{x:Null}" To_ItemProp="{x:Null}" User_Item="{x:Null}" User_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" Attachment="c:\temp\%COMPUTERNAME%.txt" Attachment_DisplayArg="c:\temp\%COMPUTERNAME%.txt" Body="Server Sec Review" Body_DisplayArg="Server Sec Review" DisplayName="Send Email" EnableSsl="True" From="rjackson@celinacomputers.com" From_DisplayArg="rjackson@celinacomputers.com" sap:VirtualizedContainerService.HintSize="524.8,315.2" Host="smtp.gmail.com" Host_DisplayArg="smtp.gmail.com" Moniker="bd4a6aef-dae6-4d19-88ce-2518efdbebd1" Port="465" Port_DisplayArg="465" Result="[SendEmail_Result_19]" ScriptDirectory="Unused" Subject="Server Sec Review" Subject_DisplayArg="Server Sec Review" To="r.jackson@networkelites.com" To_DisplayArg="r.jackson@networkelites.com" TypeName="SendEmail" User="rjackson@celinacomputers.com" User_DisplayArg="rjackson@celinacomputers.com" m_bTextLinkChange="False" />
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="RunProgram_ProcessID_7" />
+        <Variable x:TypeArguments="x:Double" Name="RunProgram_Result_8" />
+        <Variable x:TypeArguments="x:Double" Name="DownloadFileFromURL_Result_17" />
+        <Variable x:TypeArguments="x:Double" Name="SendEmail_Result_19" />
+        <Variable x:TypeArguments="x:String" Default="draconis" Name="emailpass" />
+        <Variable x:TypeArguments="x:Object" Name="Assignment_ValueOut_22" />
+        <Variable x:TypeArguments="x:Double" Name="Assignment_Result_23" />
+        <Variable x:TypeArguments="x:String" Default="draconis" Name="Password" />
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>

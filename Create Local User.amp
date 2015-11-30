@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="{03714057-4b9c-469e-a978-66d7464e3563}" Name="Create Local User" Description="Q3JlYXRlIExvY2FsIFVzZXI=" Version="1.7.2.45" RemoteCategory="0" ExecutionType="Local" PS3ObjectCount="0" VariableSuffix="9">
+  <Object ID="{23b1a36a-13da-44e0-9668-b0cb99d59539}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml&gt;&lt;Parameters&gt;&lt;Parameter ParameterName=&quot;Password&quot; Label=&quot;Password&quot; ParameterType=&quot;password&quot; Value=&quot;&quot; /&gt;&lt;/Parameters&gt;&lt;/xml&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>StartObject.Password</d2p1:m_Item1>
+        <d2p1:m_Item2>2d4f5fed-8db2-47b7-8d9a-9f3acbfbcac1</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.CreateLocalUser, PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>Password</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+    </hashset>
+  </LinkManager>
+  <Activity mc:Ignorable="sap sads" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>372.8,659.2</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy" sap:VirtualizedContainerService.HintSize="332.8,619.2" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:CreateLocalUser Computer_Item="{x:Null}" Computer_ItemProp="{x:Null}" Description_Item="{x:Null}" Description_ItemProp="{x:Null}" Password_Item="{x:Null}" Password_ItemProp="{x:Null}" UserName_Item="{x:Null}" UserName_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" Computer="localhost" Computer_DisplayArg="localhost" Description="NE Support" Description_DisplayArg="NE Support" DisplayName="Create Local User" sap:VirtualizedContainerService.HintSize="312,115.2" Moniker="2d4f5fed-8db2-47b7-8d9a-9f3acbfbcac1" Password="[Password]" Password_DisplayArg="StartObject.Password" Result="[CreateLocalUser_Result_0]" ScriptDirectory="Unused" TypeName="CreateLocalUser" UserName="nesupport" UserName_DisplayArg="nesupport" m_bTextLinkChange="False" />
+        <p:AddUserToLocalGroup Computer_Item="{x:Null}" Computer_ItemProp="{x:Null}" Domain="{x:Null}" Domain_DisplayArg="{x:Null}" Domain_Item="{x:Null}" Domain_ItemProp="{x:Null}" GroupName_Item="{x:Null}" GroupName_ItemProp="{x:Null}" UserName_Item="{x:Null}" UserName_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" Computer="localhost" Computer_DisplayArg="localhost" DisplayName="Add User To Local Group" GroupName="Users" GroupName_DisplayArg="Users" sap:VirtualizedContainerService.HintSize="312,115.2" Moniker="ec967a17-8308-4fc0-ba02-1409e18be15a" Result="[AddUserToLocalGroup_Result_2]" ScriptDirectory="Unused" TypeName="AddUserToLocalGroup" UserName="nesupport" UserName_DisplayArg="nesupport" m_bTextLinkChange="False" />
+        <p:AddUserToLocalGroup Computer_Item="{x:Null}" Computer_ItemProp="{x:Null}" Domain="{x:Null}" Domain_Item="{x:Null}" Domain_ItemProp="{x:Null}" GroupName_Item="{x:Null}" GroupName_ItemProp="{x:Null}" UserName_Item="{x:Null}" UserName_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" Computer="localhost" Computer_DisplayArg="localhost" DisplayName="Add User To Local Group" Domain_DisplayArg="" GroupName="Administrators" GroupName_DisplayArg="Administrators" sap:VirtualizedContainerService.HintSize="312,115.2" Moniker="96e8ec7c-4c15-42f0-a379-c0428072907e" Result="[AddUserToLocalGroup_Result_1]" ScriptDirectory="Unused" TypeName="AddUserToLocalGroup" UserName="nesupport" UserName_DisplayArg="nesupport" m_bTextLinkChange="False" />
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:Double" Name="CreateLocalUser_Result_0" />
+        <Variable x:TypeArguments="x:Double" Name="AddUserToLocalGroup_Result_1" />
+        <Variable x:TypeArguments="x:Double" Name="AddUserToLocalGroup_Result_2" />
+        <Variable x:TypeArguments="p:Password" Name="Password">
+          <Variable.Default>
+            <Literal x:TypeArguments="p:Password">
+              <p:Password PasswordValue="" />
+            </Literal>
+          </Variable.Default>
+        </Variable>
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>

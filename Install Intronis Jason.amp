@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="{59efa518-c68a-4df6-b26a-bd7b9b336216}" Name="Install Intronis" Description="SW5zdGFsbCBJbnRyb25pcw==" Version="1.7.0.28" RemoteCategory="0" ExecutionType="Local" PS3ObjectCount="0" VariableSuffix="32">
+  <Object ID="{cef6a145-1974-40c8-a16e-0ecb7b0893c8}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml&gt;&lt;Parameters&gt;&lt;Parameter ParameterName=&quot;Username&quot; Label=&quot;Enter the Site Username&quot; ParameterType=&quot;string&quot; Value=&quot;username&quot; /&gt;&lt;Parameter ParameterName=&quot;Password&quot; Label=&quot;Enter Password&quot; ParameterType=&quot;string&quot; Value=&quot;Password&quot; /&gt;&lt;Parameter ParameterName=&quot;ComputerID&quot; Label=&quot;Enter Computer ID&quot; ParameterType=&quot;string&quot; Value=&quot;0000&quot; /&gt;&lt;/Parameters&gt;&lt;/xml&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>54481498-872f-41cc-b597-5d217b7426b0</d2p1:m_Item1>
+        <d2p1:m_Item2>4f1a008f-c879-42b6-a16c-bc9deea9b046</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.IfObject, PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>VariableNum</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>54481498-872f-41cc-b597-5d217b7426b0</d2p1:m_Item1>
+        <d2p1:m_Item2>4f1a008f-c879-42b6-a16c-bc9deea9b046</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.IfObject, PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>ValueNum</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>d0329f09-6658-4072-9456-083e9fd36cff</d2p1:m_Item1>
+        <d2p1:m_Item2>ad6d09ee-b1f7-409c-b35b-695a0f34d152</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.IfObject, PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>VariableString</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>54481498-872f-41cc-b597-5d217b7426b0</d2p1:m_Item1>
+        <d2p1:m_Item2>4f1a008f-c879-42b6-a16c-bc9deea9b046</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.IfObject, PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>VariableString</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>StartObject.Username</d2p1:m_Item1>
+        <d2p1:m_Item2>fc56e8b9-9524-4ab6-9c78-cd8d54bd2da9</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.RunProgram, PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>Arguments</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>StartObject.Username</d2p1:m_Item1>
+        <d2p1:m_Item2>6520c41d-b501-4254-8caf-583fba103b4c</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.FormatString, PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>Input0</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>StartObject.Password</d2p1:m_Item1>
+        <d2p1:m_Item2>6520c41d-b501-4254-8caf-583fba103b4c</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.FormatString, PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>Input1</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>StartObject.ComputerID</d2p1:m_Item1>
+        <d2p1:m_Item2>722d83d9-6f92-4df4-8ae8-48147ca459e2</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.FormatString, PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>Input0</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>6520c41d-b501-4254-8caf-583fba103b4c</d2p1:m_Item1>
+        <d2p1:m_Item2>722d83d9-6f92-4df4-8ae8-48147ca459e2</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.FormatString, PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>Input1</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>722d83d9-6f92-4df4-8ae8-48147ca459e2</d2p1:m_Item1>
+        <d2p1:m_Item2>fc56e8b9-9524-4ab6-9c78-cd8d54bd2da9</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.RunProgram, PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>Arguments</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+    </hashset>
+  </LinkManager>
+  <Activity mc:Ignorable="sads sap" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>820.8,1832</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy" sap:VirtualizedContainerService.HintSize="780.8,1792" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:IsAppInstalled Application_ItemProp="{x:Null}" Computer_ItemProp="{x:Null}" Application="Network Elites Managed Backups" Application_DisplayArg="Network Elites Managed Backups" Application_Item="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" Computer="localhost" Computer_DisplayArg="localhost" Computer_Item="{x:Null}" Conditional="[IsAppInstalled_Conditional_2]" DisplayName="Is Application Installed" sap:VirtualizedContainerService.HintSize="760,57.6" Moniker="54481498-872f-41cc-b597-5d217b7426b0" Result="[IsAppInstalled_Result_3]" ScriptDirectory="Unused" TypeName="IsAppInstalled" m_bTextLinkChange="False" />
+        <p:IfObject ValueDate="{x:Null}" ValueDate_DisplayArg="{x:Null}" ValueDate_Item="{x:Null}" ValueDate_ItemProp="{x:Null}" ValueNum="{x:Null}" ValueNum_DisplayArg="{x:Null}" ValueNum_Item="{x:Null}" ValueNum_ItemProp="{x:Null}" ValueString_ItemProp="{x:Null}" VariableDate="{x:Null}" VariableDate_DisplayArg="{x:Null}" VariableDate_Item="{x:Null}" VariableDate_ItemProp="{x:Null}" VariableNum="{x:Null}" VariableNum_DisplayArg="{x:Null}" VariableNum_Item="{x:Null}" VariableNum_ItemProp="{x:Null}" VariableString_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" Condition="does not equal" DisplayName="If" sap:VirtualizedContainerService.HintSize="760,1500.8" Moniker="4f1a008f-c879-42b6-a16c-bc9deea9b046" Result="[IfObject_Result_5]" ScriptDirectory="Unused" Type="string" TypeName="IfObject" ValueString="True" ValueString_DisplayArg="True" ValueString_Item="{x:Null}" VariableString="[IsAppInstalled_Conditional_2]" VariableString_DisplayArg="IsApplicationInstalled.Conditional" VariableString_Item="{x:Null}" m_bTextLinkChange="False">
+          <p:IfObject.IfOption>
+            <ActivityAction>
+              <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="736,1337.6" Name="SequenceActivity">
+                <p:SequenceActivity.Activities>
+                  <p:FolderExists Folder_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" Conditional="[FolderExists_Conditional_12]" DisplayName="Folder Exists" Folder="c:\Temp" Folder_DisplayArg="c:\Temp" Folder_Item="{x:Null}" sap:VirtualizedContainerService.HintSize="715.2,57.6" Moniker="d0329f09-6658-4072-9456-083e9fd36cff" Result="[FolderExists_Result_13]" ScriptDirectory="Unused" TypeName="FolderExists" m_bTextLinkChange="False" />
+                  <p:IfObject ValueDate_DisplayArg="{x:Null}" ValueDate_ItemProp="{x:Null}" ValueNum_DisplayArg="{x:Null}" ValueNum_ItemProp="{x:Null}" ValueString_ItemProp="{x:Null}" VariableDate_DisplayArg="{x:Null}" VariableDate_ItemProp="{x:Null}" VariableNum_DisplayArg="{x:Null}" VariableNum_ItemProp="{x:Null}" VariableString_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" Condition="equals" DisplayName="If" sap:VirtualizedContainerService.HintSize="715.2,344" Moniker="ad6d09ee-b1f7-409c-b35b-695a0f34d152" Result="[IfObject_Result_14]" ScriptDirectory="Unused" Type="string" TypeName="IfObject" ValueDate="{x:Null}" ValueDate_Item="{x:Null}" ValueNum="{x:Null}" ValueNum_Item="{x:Null}" ValueString="False" ValueString_DisplayArg="False" ValueString_Item="{x:Null}" VariableDate="{x:Null}" VariableDate_Item="{x:Null}" VariableNum="{x:Null}" VariableNum_Item="{x:Null}" VariableString="[FolderExists_Conditional_12]" VariableString_DisplayArg="FolderExists.Conditional" VariableString_Item="{x:Null}" m_bTextLinkChange="False">
+                    <p:IfObject.IfOption>
+                      <ActivityAction>
+                        <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="299.2,180.8" Name="SequenceActivity">
+                          <p:SequenceActivity.Activities>
+                            <p:CreateFolder Folder_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" DisplayName="Create Folder" Folder="c:\temp" FolderInfo="[CreateFolder_FolderInfo_15]" FolderInfo_Item="[CreateFolder_FolderInfo_Item_16]" Folder_DisplayArg="c:\temp" Folder_Item="{x:Null}" sap:VirtualizedContainerService.HintSize="278.4,57.6" Moniker="ecafdfef-4dbb-4084-9972-f16c2b7ce812" Result="[CreateFolder_Result_17]" ScriptDirectory="Unused" TypeName="CreateFolder" m_bTextLinkChange="False" />
+                          </p:SequenceActivity.Activities>
+                          <p:SequenceActivity.Variables>
+                            <Variable x:TypeArguments="x:String" Name="CreateFolder_FolderInfo_15" />
+                            <Variable x:TypeArguments="x:Object" Name="CreateFolder_FolderInfo_Item_16" />
+                            <Variable x:TypeArguments="x:Double" Name="CreateFolder_Result_17" />
+                          </p:SequenceActivity.Variables>
+                        </p:SequenceActivity>
+                      </ActivityAction>
+                    </p:IfObject.IfOption>
+                  </p:IfObject>
+                  <p:DownloadFileFromURL RemoteFileURL_ItemProp="{x:Null}" SaveAsFileName_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" DisplayName="Download File from URL" sap:VirtualizedContainerService.HintSize="715.2,126.4" Moniker="0074e973-6149-46c6-bdad-9e2309210d20" OverwriteExistingFile="True" RemoteFileURL="http://swinstall-repo.netelite.us/netelite/managedbackups/NetworkElitesManagedBackups-Setup.exe" RemoteFileURL_DisplayArg="http://swinstall-repo.netelite.us/netelite/managedbackups/NetworkElitesManagedBackups-Setup.exe" RemoteFileURL_Item="{x:Null}" Result="[DownloadFileFromURL_Result_8]" SaveAsFileName="C:\temp\NetworkElitesManagedBackups-Setup.exe" SaveAsFileName_DisplayArg="C:\temp\NetworkElitesManagedBackups-Setup.exe" SaveAsFileName_Item="{x:Null}" ScriptDirectory="Unused" TypeName="DownloadFileFromURL" m_bTextLinkChange="False" />
+                  <p:FormatString Input0_ItemProp="{x:Null}" Input1_ItemProp="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" DisplayName="Format String: Username" FormattedString="[FormatString_FormattedString_26]" sap:VirtualizedContainerService.HintSize="715.2,120" Input0="[Username]" Input0_DisplayArg="StartObject.Username" Input0_Item="{x:Null}" Input1="[Password]" Input1_DisplayArg="StartObject.Password" Input1_Item="{x:Null}" Moniker="6520c41d-b501-4254-8caf-583fba103b4c" Result="[FormatString_Result_27]" ScriptDirectory="Unused" Text="/Username={0} /Password={1} /ComputerID=" Text_DisplayArg="/Username={0} /Password={1} /ComputerID=" Text_Item="{x:Null}" TypeName="FormatString" m_bTextLinkChange="False" />
+                  <p:FormatString Input0_ItemProp="{x:Null}" Input1_ItemProp="{x:Null}" Text_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" DisplayName="Format String; Password" FormattedString="[FormatString_FormattedString_30]" sap:VirtualizedContainerService.HintSize="715.2,120" Input0="[ComputerID]" Input0_DisplayArg="StartObject.ComputerID" Input0_Item="{x:Null}" Input1="[FormatString_FormattedString_26]" Input1_DisplayArg="FormatString:Username.FormattedString" Input1_Item="{x:Null}" Moniker="722d83d9-6f92-4df4-8ae8-48147ca459e2" Result="[FormatString_Result_31]" ScriptDirectory="Unused" Text="{}{1}{0} /Managedkey /Silent" Text_DisplayArg="{}{1}{0} /Managedkey /Silent" Text_Item="{x:Null}" TypeName="FormatString" m_bTextLinkChange="False" />
+                  <p:RunProgram Arguments_ItemProp="{x:Null}" Program_ItemProp="{x:Null}" WorkingDirectory_ItemProp="{x:Null}" Arguments="[FormatString_FormattedString_30]" Arguments_DisplayArg="FormatString;Password.FormattedString" Arguments_Item="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" DisplayName="Run Program" sap:VirtualizedContainerService.HintSize="715.2,246.4" Moniker="fc56e8b9-9524-4ab6-9c78-cd8d54bd2da9" ProcessID="[RunProgram_ProcessID_20]" Program="C:\temp\NetworkElitesManagedBackups-Setup.exe " Program_DisplayArg="C:\temp\NetworkElitesManagedBackups-Setup.exe " Program_Item="{x:Null}" Result="[RunProgram_Result_21]" RunAsType="LocalSystem" ScriptDirectory="Unused" TypeName="RunProgram" WaitForCompletion="True" WindowType="Normal" WorkingDirectory="C:\temp" WorkingDirectory_DisplayArg="C:\temp" WorkingDirectory_Item="{x:Null}" m_bTextLinkChange="False" />
+                </p:SequenceActivity.Activities>
+                <p:SequenceActivity.Variables>
+                  <Variable x:TypeArguments="x:Double" Name="DownloadFileFromURL_Result_8" />
+                  <Variable x:TypeArguments="x:String" Name="FolderExists_Conditional_12" />
+                  <Variable x:TypeArguments="x:Double" Name="FolderExists_Result_13" />
+                  <Variable x:TypeArguments="x:Double" Name="IfObject_Result_14" />
+                  <Variable x:TypeArguments="x:String" Name="RunProgram_ProcessID_20" />
+                  <Variable x:TypeArguments="x:Double" Name="RunProgram_Result_21" />
+                  <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString_26" />
+                  <Variable x:TypeArguments="x:Double" Name="FormatString_Result_27" />
+                  <Variable x:TypeArguments="x:String" Name="FormatString_FormattedString_30" />
+                  <Variable x:TypeArguments="x:Double" Name="FormatString_Result_31" />
+                </p:SequenceActivity.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </p:SequenceActivity>
+            </ActivityAction>
+          </p:IfObject.IfOption>
+        </p:IfObject>
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="IsAppInstalled_Conditional_2" />
+        <Variable x:TypeArguments="x:Double" Name="IsAppInstalled_Result_3" />
+        <Variable x:TypeArguments="x:Double" Name="IfObject_Result_5" />
+        <Variable x:TypeArguments="x:String" Default="necolo1" Name="Username" />
+        <Variable x:TypeArguments="x:String" Default="r00tr00t" Name="Password" />
+        <Variable x:TypeArguments="x:String" Default="0005" Name="ComputerID" />
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>

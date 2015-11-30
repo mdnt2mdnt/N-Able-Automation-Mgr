@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="{8178b3ba-8a7c-47e8-adde-96173714acd7}" Name="Lastpass Enterprise Install" Description="TGFzdHBhc3MgaW5zdGFsbCBmb3IgU3RhbmRpbmcgRG9nIEludGVyYWN0aXZlLiAgV2lsbCBiZSBhYmxlIHRvIGJlIHB1c2hlZCB0byBhbnkgY2xpZW50Lg==" Version="1.7.2.45" RemoteCategory="0" ExecutionType="Local" PS3ObjectCount="0" VariableSuffix="19">
+  <Object ID="{6207d688-7c80-4845-851a-280a0896783c}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml /&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>b5aff343-3d94-4308-9881-ced4382f5d5e</d2p1:m_Item1>
+        <d2p1:m_Item2>a5cca8f2-cfb9-41ae-9b4c-116215187433</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.IfElse, PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>VariableNum</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>b5aff343-3d94-4308-9881-ced4382f5d5e</d2p1:m_Item1>
+        <d2p1:m_Item2>f3916be8-99f6-4ad9-a398-f1b4381cc54e</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.IfObject, PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>VariableNum</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>d649061d-1aa1-4545-b2e3-f5cb427620bb</d2p1:m_Item1>
+        <d2p1:m_Item2>f3916be8-99f6-4ad9-a398-f1b4381cc54e</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.IfObject, PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>VariableNum</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>d649061d-1aa1-4545-b2e3-f5cb427620bb</d2p1:m_Item1>
+        <d2p1:m_Item2>f3916be8-99f6-4ad9-a398-f1b4381cc54e</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.IfObject, PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>VariableString</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>b5aff343-3d94-4308-9881-ced4382f5d5e</d2p1:m_Item1>
+        <d2p1:m_Item2>a5cca8f2-cfb9-41ae-9b4c-116215187433</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.IfElse, PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>VariableString</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+    </hashset>
+  </LinkManager>
+  <Activity mc:Ignorable="sap sads" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>982.4,1348.8</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy" sap:VirtualizedContainerService.HintSize="1016,1472" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:FolderExists Folder_Item="{x:Null}" Folder_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" Conditional="[FolderExists_Conditional_3]" DisplayName="Folder Exists Program" Folder="C:\Program Files (x86)" Folder_DisplayArg="C:\Program Files (x86)" sap:VirtualizedContainerService.HintSize="995.2,57.6" Moniker="b5aff343-3d94-4308-9881-ced4382f5d5e" Result="[FolderExists_Result_4]" ScriptDirectory="Unused" TypeName="FolderExists" m_bTextLinkChange="False" />
+        <p:FolderExists Folder_Item="{x:Null}" Folder_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" Conditional="[FolderExists_Conditional_9]" DisplayName="Folder Exists Temp" Folder="c:\temp" Folder_DisplayArg="c:\temp" sap:VirtualizedContainerService.HintSize="995.2,57.6" Moniker="d649061d-1aa1-4545-b2e3-f5cb427620bb" Result="[FolderExists_Result_10]" ScriptDirectory="Unused" TypeName="FolderExists" m_bTextLinkChange="False" />
+        <p:IfObject ValueDate="{x:Null}" ValueDate_DisplayArg="{x:Null}" ValueDate_Item="{x:Null}" ValueDate_ItemProp="{x:Null}" ValueNum="{x:Null}" ValueNum_DisplayArg="{x:Null}" ValueNum_Item="{x:Null}" ValueNum_ItemProp="{x:Null}" ValueString_Item="{x:Null}" ValueString_ItemProp="{x:Null}" VariableDate="{x:Null}" VariableDate_DisplayArg="{x:Null}" VariableDate_Item="{x:Null}" VariableDate_ItemProp="{x:Null}" VariableNum="{x:Null}" VariableNum_DisplayArg="{x:Null}" VariableNum_Item="{x:Null}" VariableNum_ItemProp="{x:Null}" VariableString_Item="{x:Null}" VariableString_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" Condition="does not equal" DisplayName="If" sap:VirtualizedContainerService.HintSize="995.2,344" Moniker="f3916be8-99f6-4ad9-a398-f1b4381cc54e" Result="[IfObject_Result_11]" ScriptDirectory="Unused" Type="string" TypeName="IfObject" ValueString="true" ValueString_DisplayArg="true" VariableString="[FolderExists_Conditional_9]" VariableString_DisplayArg="FolderExistsTemp.Conditional" m_bTextLinkChange="False">
+          <p:IfObject.IfOption>
+            <ActivityAction>
+              <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="299.2,180.8" Name="SequenceActivity">
+                <p:SequenceActivity.Activities>
+                  <p:CreateFolder Folder_Item="{x:Null}" Folder_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" DisplayName="Create Folder" Folder="c:\temp" FolderInfo="[CreateFolder_FolderInfo_12]" FolderInfo_Item="[CreateFolder_FolderInfo_Item_13]" Folder_DisplayArg="c:\temp" sap:VirtualizedContainerService.HintSize="278.4,57.6" Moniker="7a01ebf1-370a-4e10-a8a0-84b778d32a16" Result="[CreateFolder_Result_14]" ScriptDirectory="Unused" TypeName="CreateFolder" m_bTextLinkChange="False" />
+                </p:SequenceActivity.Activities>
+                <p:SequenceActivity.Variables>
+                  <Variable x:TypeArguments="x:String" Name="CreateFolder_FolderInfo_12" />
+                  <Variable x:TypeArguments="x:Object" Name="CreateFolder_FolderInfo_Item_13" />
+                  <Variable x:TypeArguments="x:Double" Name="CreateFolder_Result_14" />
+                </p:SequenceActivity.Variables>
+              </p:SequenceActivity>
+            </ActivityAction>
+          </p:IfObject.IfOption>
+        </p:IfObject>
+        <p:IfElse ValueDate="{x:Null}" ValueDate_DisplayArg="{x:Null}" ValueDate_Item="{x:Null}" ValueDate_ItemProp="{x:Null}" ValueNum="{x:Null}" ValueNum_DisplayArg="{x:Null}" ValueNum_Item="{x:Null}" ValueNum_ItemProp="{x:Null}" ValueString_Item="{x:Null}" ValueString_ItemProp="{x:Null}" VariableDate="{x:Null}" VariableDate_DisplayArg="{x:Null}" VariableDate_Item="{x:Null}" VariableDate_ItemProp="{x:Null}" VariableNum="{x:Null}" VariableNum_DisplayArg="{x:Null}" VariableNum_Item="{x:Null}" VariableNum_ItemProp="{x:Null}" VariableString_Item="{x:Null}" VariableString_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" Condition="equals" DisplayName="If/Else" sap:VirtualizedContainerService.HintSize="995.2,699.2" Moniker="a5cca8f2-cfb9-41ae-9b4c-116215187433" Result="[IfElse_Result_0]" ScriptDirectory="Unused" Type="string" TypeName="IfElse" ValueString="true" ValueString_DisplayArg="true" VariableString="[FolderExists_Conditional_3]" VariableString_DisplayArg="FolderExistsProgram.Conditional" m_bTextLinkChange="False">
+          <p:IfElse.ElseOption>
+            <ActivityAction>
+              <p:SequenceActivity DisplayName="Else" sap:VirtualizedContainerService.HintSize="468.8,536" Name="SequenceActivity">
+                <p:SequenceActivity.Activities>
+                  <p:DownloadFileFromURL RemoteFileURL_Item="{x:Null}" RemoteFileURL_ItemProp="{x:Null}" SaveAsFileName_Item="{x:Null}" SaveAsFileName_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" DisplayName="Download File from URL" sap:VirtualizedContainerService.HintSize="448,126.4" Moniker="ed1e2555-85d3-4fd7-97b2-e09aff4cb08c" OverwriteExistingFile="True" RemoteFileURL="http://swinstall-repo.netelite.us/sdi/lastpassfull.exe" RemoteFileURL_DisplayArg="http://swinstall-repo.netelite.us/sdi/lastpassfull.exe" Result="[DownloadFileFromURL_Result_2]" SaveAsFileName="c:\Temp\lastpassfull.exe" SaveAsFileName_DisplayArg="c:\Temp\lastpassfull.exe" ScriptDirectory="Unused" TypeName="DownloadFileFromURL" m_bTextLinkChange="False" />
+                  <p:RunProgram Arguments_Item="{x:Null}" Arguments_ItemProp="{x:Null}" Program_Item="{x:Null}" Program_ItemProp="{x:Null}" WorkingDirectory="{x:Null}" WorkingDirectory_DisplayArg="{x:Null}" WorkingDirectory_Item="{x:Null}" WorkingDirectory_ItemProp="{x:Null}" Arguments="-si" Arguments_DisplayArg="-si" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" DisplayName="Run Program" sap:VirtualizedContainerService.HintSize="448,246.4" Moniker="a2a54ca0-d5d6-4740-aaf2-858ae8b0c433" ProcessID="[RunProgram_ProcessID_17]" Program="c:\Temp\lastpassfull.exe" Program_DisplayArg="c:\Temp\lastpassfull.exe" Result="[RunProgram_Result_18]" RunAsType="LocalSystem" ScriptDirectory="Unused" TypeName="RunProgram" WaitForCompletion="True" WindowType="Normal" m_bTextLinkChange="False" />
+                </p:SequenceActivity.Activities>
+                <p:SequenceActivity.Variables>
+                  <Variable x:TypeArguments="x:Double" Name="DownloadFileFromURL_Result_2" />
+                  <Variable x:TypeArguments="x:String" Name="RunProgram_ProcessID_17" />
+                  <Variable x:TypeArguments="x:Double" Name="RunProgram_Result_18" />
+                </p:SequenceActivity.Variables>
+              </p:SequenceActivity>
+            </ActivityAction>
+          </p:IfElse.ElseOption>
+          <p:IfElse.IfOption>
+            <ActivityAction>
+              <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="492.8,536" Name="SequenceActivity">
+                <p:SequenceActivity.Activities>
+                  <p:DownloadFileFromURL RemoteFileURL_Item="{x:Null}" RemoteFileURL_ItemProp="{x:Null}" SaveAsFileName_Item="{x:Null}" SaveAsFileName_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" DisplayName="Download File from URL" sap:VirtualizedContainerService.HintSize="472,126.4" Moniker="603a30c6-b11b-4a73-84bc-f23ca715f597" OverwriteExistingFile="True" RemoteFileURL="http://swinstall-repo.netelite.us/sdi/lastpass_x64full.exe" RemoteFileURL_DisplayArg="http://swinstall-repo.netelite.us/sdi/lastpass_x64full.exe" Result="[DownloadFileFromURL_Result_1]" SaveAsFileName="c:\Temp\lastpass_x64full.exe" SaveAsFileName_DisplayArg="c:\Temp\lastpass_x64full.exe" ScriptDirectory="Unused" TypeName="DownloadFileFromURL" m_bTextLinkChange="False" />
+                  <p:RunProgram Arguments_Item="{x:Null}" Arguments_ItemProp="{x:Null}" Program_Item="{x:Null}" Program_ItemProp="{x:Null}" WorkingDirectory="{x:Null}" WorkingDirectory_Item="{x:Null}" WorkingDirectory_ItemProp="{x:Null}" Arguments="-si" Arguments_DisplayArg="-si" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" DisplayName="Run Program" sap:VirtualizedContainerService.HintSize="472,246.4" Moniker="ae121d2f-5e44-4cf1-afde-1b6512ba1333" ProcessID="[RunProgram_ProcessID_15]" Program="c:\Temp\lastpass_x64full.exe" Program_DisplayArg="c:\Temp\lastpass_x64full.exe" Result="[RunProgram_Result_16]" RunAsType="LocalSystem" ScriptDirectory="Unused" TypeName="RunProgram" WaitForCompletion="True" WindowType="Normal" WorkingDirectory_DisplayArg="" m_bTextLinkChange="False" />
+                </p:SequenceActivity.Activities>
+                <p:SequenceActivity.Variables>
+                  <Variable x:TypeArguments="x:Double" Name="DownloadFileFromURL_Result_1" />
+                  <Variable x:TypeArguments="x:String" Name="RunProgram_ProcessID_15" />
+                  <Variable x:TypeArguments="x:Double" Name="RunProgram_Result_16" />
+                </p:SequenceActivity.Variables>
+              </p:SequenceActivity>
+            </ActivityAction>
+          </p:IfElse.IfOption>
+        </p:IfElse>
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:Double" Name="IfElse_Result_0" />
+        <Variable x:TypeArguments="x:String" Name="FolderExists_Conditional_3" />
+        <Variable x:TypeArguments="x:Double" Name="FolderExists_Result_4" />
+        <Variable x:TypeArguments="x:String" Name="FolderExists_Conditional_9" />
+        <Variable x:TypeArguments="x:Double" Name="FolderExists_Result_10" />
+        <Variable x:TypeArguments="x:Double" Name="IfObject_Result_11" />
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>
