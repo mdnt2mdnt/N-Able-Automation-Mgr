@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="{f2533f2a-11df-4b49-ab15-730182333606}" Name="Install OSINUM" Description="RGlzYWJsZSBVQUMgDQpJbnN0YWxsIE9TSU5VTQ==" Version="1.7.2.53" RemoteCategory="0" ExecutionType="Local" PS3ObjectCount="0" VariableSuffix="3">
+  <Object ID="{6b361b9d-5187-4242-85c9-73f5cc95aecd}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml /&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" />
+  </LinkManager>
+  <Activity mc:Ignorable="sap sads" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>260,283</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy" sap:VirtualizedContainerService.HintSize="396,433" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:RunProgram Arguments_Item="{x:Null}" Arguments_ItemProp="{x:Null}" Program_Item="{x:Null}" Program_ItemProp="{x:Null}" WorkingDirectory_Item="{x:Null}" WorkingDirectory_ItemProp="{x:Null}" Arguments="/passive" Arguments_DisplayArg="/passive" AssemblyName="PolicyExecutionEngine, Version=1.7.2.53, Culture=neutral, PublicKeyToken=null" DisplayName="Run Program" sap:VirtualizedContainerService.HintSize="376,241" Moniker="68c3dfa2-57c7-4951-8b95-32096a6ae5ce" ProcessID="[RunProgram_ProcessID_1]" Program="\\ccs-corp-dc4\it$\WS 14.2.26\wssetup.msi" Program_DisplayArg="\\ccs-corp-dc4\it$\WS 14.2.26\wssetup.msi" Result="[RunProgram_Result_2]" RunAsType="CLU" ScriptDirectory="Unused" TypeName="RunProgram" WaitForCompletion="True" WindowType="Normal" WorkingDirectory="c:\" WorkingDirectory_DisplayArg="c:\" m_bTextLinkChange="False" />
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="RunProgram_ProcessID_1" />
+        <Variable x:TypeArguments="x:Double" Name="RunProgram_Result_2" />
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>

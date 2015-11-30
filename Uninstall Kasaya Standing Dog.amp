@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="{4f5af53f-b074-4d68-9031-e85a0e6a4945}" Name="Uninstall Kasaya Standing Dog" Description="VW5pbnN0YWxsIEthc2F5YSBTdGFuZGluZyBEb2c=" Version="1.7.0.28" RemoteCategory="0" ExecutionType="Local" PS3ObjectCount="0" VariableSuffix="5">
+  <Object ID="{089958d1-eba2-4c1d-bffd-45cddbb7b82a}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml /&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>1c912010-968c-4cd0-b231-747a3d4e769c</d2p1:m_Item1>
+        <d2p1:m_Item2>c5665595-26fa-44c0-ad89-746c05f2c141</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.IfObject, PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>VariableNum</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+      <d2p1:TupleOfstringstringstringstring>
+        <d2p1:m_Item1>1c912010-968c-4cd0-b231-747a3d4e769c</d2p1:m_Item1>
+        <d2p1:m_Item2>c5665595-26fa-44c0-ad89-746c05f2c141</d2p1:m_Item2>
+        <d2p1:m_Item3>PolicyExecutor.IfObject, PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null</d2p1:m_Item3>
+        <d2p1:m_Item4>VariableString</d2p1:m_Item4>
+      </d2p1:TupleOfstringstringstringstring>
+    </hashset>
+  </LinkManager>
+  <Activity mc:Ignorable="sads sap" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>630.4,676.8</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy" sap:VirtualizedContainerService.HintSize="590.4,636.8" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:IsAppInstalled Application_ItemProp="{x:Null}" Computer_ItemProp="{x:Null}" Application="Paranet Solutions (sd-10052013.dallas.tx.usa.sdi - manage.paranet.com)" Application_DisplayArg="Paranet Solutions (sd-10052013.dallas.tx.usa.sdi - manage.paranet.com)" Application_Item="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" Computer="localhost" Computer_DisplayArg="localhost" Computer_Item="{x:Null}" Conditional="[IsAppInstalled_Conditional_1]" DisplayName="Is Application Installed" sap:VirtualizedContainerService.HintSize="569.6,57.6" Moniker="1c912010-968c-4cd0-b231-747a3d4e769c" Result="[IsAppInstalled_Result_2]" ScriptDirectory="Unused" TypeName="IsAppInstalled" m_bTextLinkChange="False" />
+        <p:IfObject ValueDate="{x:Null}" ValueDate_DisplayArg="{x:Null}" ValueDate_Item="{x:Null}" ValueDate_ItemProp="{x:Null}" ValueNum="{x:Null}" ValueNum_DisplayArg="{x:Null}" ValueNum_Item="{x:Null}" ValueNum_ItemProp="{x:Null}" ValueString_Item="{x:Null}" ValueString_ItemProp="{x:Null}" VariableDate="{x:Null}" VariableDate_DisplayArg="{x:Null}" VariableDate_Item="{x:Null}" VariableDate_ItemProp="{x:Null}" VariableNum="{x:Null}" VariableNum_DisplayArg="{x:Null}" VariableNum_Item="{x:Null}" VariableNum_ItemProp="{x:Null}" VariableString_Item="{x:Null}" VariableString_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" Condition="equals" DisplayName="If" sap:VirtualizedContainerService.HintSize="569.6,345.6" Moniker="c5665595-26fa-44c0-ad89-746c05f2c141" Result="[IfObject_Result_3]" ScriptDirectory="Unused" Type="string" TypeName="IfObject" ValueString="True" ValueString_DisplayArg="True" VariableString="[IsAppInstalled_Conditional_1]" VariableString_DisplayArg="IsApplicationInstalled.Conditional" m_bTextLinkChange="False">
+          <p:IfObject.IfOption>
+            <ActivityAction>
+              <p:SequenceActivity DisplayName="Then" sap:VirtualizedContainerService.HintSize="545.6,182.4" Name="SequenceActivity">
+                <p:SequenceActivity.Activities>
+                  <p:DeleteSoftware ApplicationName_ItemProp="{x:Null}" ApplicationName="Paranet Solutions (sd-10052013.dallas.tx.usa.sdi - manage.paranet.com)" ApplicationName_DisplayArg="Paranet Solutions (sd-10052013.dallas.tx.usa.sdi - manage.paranet.com)" ApplicationName_Item="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.0.28, Culture=neutral, PublicKeyToken=null" DisplayName="Uninstall Software" sap:VirtualizedContainerService.HintSize="524.8,59.2" Moniker="fe73e49f-55aa-4d8b-a874-439bd5f7f2c0" Result="[DeleteSoftware_Result_4]" ScriptDirectory="Unused" TypeName="DeleteSoftware" m_bTextLinkChange="False" />
+                </p:SequenceActivity.Activities>
+                <p:SequenceActivity.Variables>
+                  <Variable x:TypeArguments="x:Double" Name="DeleteSoftware_Result_4" />
+                </p:SequenceActivity.Variables>
+              </p:SequenceActivity>
+            </ActivityAction>
+          </p:IfObject.IfOption>
+        </p:IfObject>
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="IsAppInstalled_Conditional_1" />
+        <Variable x:TypeArguments="x:Double" Name="IsAppInstalled_Result_2" />
+        <Variable x:TypeArguments="x:Double" Name="IfObject_Result_3" />
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>
