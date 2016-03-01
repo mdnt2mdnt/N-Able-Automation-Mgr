@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><Policy ID="{03714057-4b9c-469e-a978-66d7464e3563}" Name="Create Local User RDP Access" Description="Q3JlYXRlIExvY2FsIFVzZXIgQWRkIHRoZW0gdG8gdGhlIFJlbW90ZSBEZXNrdG9wIFVzZXJzIEdyb3VwLg==" Version="2.0.3.32" RemoteCategory="0" ExecutionType="Local" PS3ObjectCount="0">
+  <Object ID="{8ed8cbfd-293c-407f-8b0c-a7c9f7c57030}" Type="{B6FA6D8B-EEAA-47A6-8463-7F9A4F5BBB6E}" Data="&lt;xml&gt;&lt;Parameters&gt;&lt;Parameter ParameterName=&quot;Password&quot; Label=&quot;Password&quot; ParameterType=&quot;password&quot; Value=&quot;&quot; /&gt;&lt;Parameter ParameterName=&quot;Username&quot; Label=&quot;Username&quot; ParameterType=&quot;string&quot; Value=&quot;&quot; /&gt;&lt;/Parameters&gt;&lt;/xml&gt;" />
+  <LinkManager xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/PolicyExecutor">
+    <hashset xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" />
+  </LinkManager>
+  <Activity mc:Ignorable="sads sap" x:Class="Policy Builder" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PolicyExecutor;assembly=PolicyExecutionEngine" xmlns:sads="http://schemas.microsoft.com/netfx/2010/xaml/activities/debugger" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <x:Members>
+      <x:Property Name="PolicyGUID" Type="InArgument(x:String)" />
+    </x:Members>
+    <sap:VirtualizedContainerService.HintSize>406,783</sap:VirtualizedContainerService.HintSize>
+    <mva:VisualBasic.Settings>Assembly references and imported namespaces serialized as XML namespaces</mva:VisualBasic.Settings>
+    <p:PolicySequence DisplayName="Policy" sap:VirtualizedContainerService.HintSize="406,783" mva:VisualBasic.Settings="Assembly references and imported namespaces serialized as XML namespaces">
+      <p:PolicySequence.Activities>
+        <p:CreateLocalUser Description_Item="{x:Null}" Description_ItemProp="{x:Null}" Password_Item="{x:Null}" Password_ItemProp="{x:Null}" UserName_Item="{x:Null}" UserName_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" Description="NE Support" Description_DisplayArg="NE Support" DisplayName="Create Local User" sap:VirtualizedContainerService.HintSize="370,160" Moniker="2d4f5fed-8db2-47b7-8d9a-9f3acbfbcac1" Password="[Password]" Password_DisplayArg="Input Parameters.Password" Result="[CreateLocalUser_Result_0]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="CreateLocalUser" UserName="[Username]" UserName_DisplayArg="Input Parameters.Username" m_bTextLinkChange="False" />
+        <p:AddUserToLocalGroup Domain="{x:Null}" Domain_DisplayArg="{x:Null}" Domain_Item="{x:Null}" Domain_ItemProp="{x:Null}" GroupName_Item="{x:Null}" GroupName_ItemProp="{x:Null}" UserName_Item="{x:Null}" UserName_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" DisplayName="Add User To Local Group" GroupName="Users" GroupName_DisplayArg="Users" sap:VirtualizedContainerService.HintSize="370,160" Moniker="ec967a17-8308-4fc0-ba02-1409e18be15a" Result="[AddUserToLocalGroup_Result_2]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="AddUserToLocalGroup" UserName="[Username]" UserName_DisplayArg="Input Parameters.Username" m_bTextLinkChange="False" />
+        <p:AddUserToLocalGroup Domain="{x:Null}" Domain_Item="{x:Null}" Domain_ItemProp="{x:Null}" GroupName_Item="{x:Null}" GroupName_ItemProp="{x:Null}" UserName_Item="{x:Null}" UserName_ItemProp="{x:Null}" AssemblyName="PolicyExecutionEngine, Version=1.7.2.45, Culture=neutral, PublicKeyToken=null" DisplayName="Add User To Local Group" Domain_DisplayArg="" GroupName="Remote Desktop Users" GroupName_DisplayArg="Remote Desktop Users" sap:VirtualizedContainerService.HintSize="370,160" Moniker="96e8ec7c-4c15-42f0-a379-c0428072907e" Result="[AddUserToLocalGroup_Result_1]" RunAsCurrentLoggedOnUser="False" ScriptExecutionMethod="ExecuteDebug" TypeName="AddUserToLocalGroup" UserName="[Username]" UserName_DisplayArg="Input Parameters.Username" m_bTextLinkChange="False" />
+      </p:PolicySequence.Activities>
+      <p:PolicySequence.Variables>
+        <Variable x:TypeArguments="x:Double" Name="CreateLocalUser_Result_0" />
+        <Variable x:TypeArguments="x:Double" Name="AddUserToLocalGroup_Result_1" />
+        <Variable x:TypeArguments="x:Double" Name="AddUserToLocalGroup_Result_2" />
+        <Variable x:TypeArguments="p:Password" Name="Password">
+          <Variable.Default>
+            <Literal x:TypeArguments="p:Password">
+              <p:Password PasswordValue="" />
+            </Literal>
+          </Variable.Default>
+        </Variable>
+        <Variable x:TypeArguments="x:String" Name="Username" />
+      </p:PolicySequence.Variables>
+    </p:PolicySequence>
+  </Activity>
+</Policy>
